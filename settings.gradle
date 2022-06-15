@@ -1,0 +1,9 @@
+rootProject.name = "FlutterNativeTest"
+include ':app'
+setBinding(new Binding([gradle: this]))
+evaluate(new File(
+        settingsDir,
+        './lib_flutter/.android/include_flutter.groovy'
+))
+
+include ':lib_flutter'
